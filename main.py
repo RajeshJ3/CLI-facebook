@@ -61,7 +61,7 @@ def messages(driver):
                     seeOlder = driver.find_element_by_link_text("See older messages")
                 except:
                     seeOlder = driver.find_element_by_link_text("see older messages")
-            print("\nLoading more friends...")
+            print("\nPlease wait while we load more of your friends...")
             seeOlder.click()
         elif friendNo == 66:
             menu(driver)
@@ -100,7 +100,7 @@ def messages(driver):
                 msg = input(f"\nEnter message for {friend}: ")
                 message.send_keys(msg)
 
-                print("\nSending...\n")
+                print("\nSending message...\n")
 
 
                 sendBtn = driver.find_element_by_xpath("/html/body/div/div/div[2]/div/div[1]/div[3]/div/div/form/table/tbody/tr/td[2]/input")
